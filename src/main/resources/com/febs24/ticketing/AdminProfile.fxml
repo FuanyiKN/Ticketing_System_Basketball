@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.febs24.ticketing.controllers.AdminProfileController">
+    <children>
+        <Label AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="14.0" prefHeight="46.0" prefWidth="85.0" text="FEBS" textFill="#910909">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="59.0" text="Admin Profile" textFill="#510303">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="teamComboBox" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="91.0" prefWidth="150.0" promptText="Select Team" onAction="#teamSelected" />
+        <TabPane AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="130.0" AnchorPane.rightAnchor="223.0" AnchorPane.bottomAnchor="24.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Games">
+                    <content>
+                        <VBox fx:id="gamesVBox" AnchorPane.leftAnchor="14" AnchorPane.topAnchor="14" AnchorPane.rightAnchor="14" AnchorPane.bottomAnchor="14">
+                            <ListView fx:id="gamesListView" />
+                            <Button fx:id="addGameButton" onAction="#addGame" text="Add Game" />
+                            <Button fx:id="updateGameButton" onAction="#updateGame" text="Update Game" />
+                            <Button fx:id="deleteGameButton" onAction="#deleteGame" text="Delete Game" />
+                        </VBox>
+                    </content>
+                </Tab>
+                <Tab text="Tickets">
+                    <content>
+                        <VBox fx:id="ticketsVBox" AnchorPane.leftAnchor="14" AnchorPane.topAnchor="14" AnchorPane.rightAnchor="14" AnchorPane.bottomAnchor="14">
+                            <ListView fx:id="ticketsListView" />
+                            <Button fx:id="addTicketButton" onAction="#addTicket" text="Add Ticket" />
+                            <Button fx:id="updateTicketButton" onAction="#updateTicket" text="Update Ticket" />
+                            <Button fx:id="deleteTicketButton" onAction="#deleteTicket" text="Delete Ticket" />
+                        </VBox>
+                    </content>
+                </Tab>
+                <Tab text="Bookings">
+                    <content>
+                        <VBox fx:id="bookingsVBox" AnchorPane.leftAnchor="14" AnchorPane.topAnchor="14" AnchorPane.rightAnchor="14" AnchorPane.bottomAnchor="14">
+                            <ListView fx:id="bookingsListView" />
+                            <Button fx:id="addBookingButton" onAction="#addBooking" text="Add Booking" />
+                            <Button fx:id="updateBookingButton" onAction="#updateBooking" text="Update Booking" />
+                            <Button fx:id="deleteBookingButton" onAction="#deleteBooking" text="Delete Booking" />
+                        </VBox>
+                    </content>
+                </Tab>
+                <Tab text="Users">
+                    <content>
+                        <VBox fx:id="usersVBox" AnchorPane.leftAnchor="14" AnchorPane.topAnchor="14" AnchorPane.rightAnchor="14" AnchorPane.bottomAnchor="14">
+                            <ListView fx:id="usersListView" />
+                            <Button fx:id="addUserButton" onAction="#addUser" text="Add User" />
+                            <Button fx:id="updateUserButton" onAction="#updateUser" text="Update User" />
+                            <Button fx:id="deleteUserButton" onAction="#deleteUser" text="Delete User" />
+                            <Button fx:id="makeAdminButton" onAction="#makeAdmin" text="Make User Admin" />
+                        </VBox>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <Button AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="41.0" mnemonicParsing="false" text="Logout" textFill="#611818" onAction="#logout">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

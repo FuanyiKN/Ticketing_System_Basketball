@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.febs24.ticketing.controllers.UpdateGameController">
+    <children>
+        <Label text="Update Game">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <TextField fx:id="gameIdField" promptText="Game ID" />
+        <TextField fx:id="gameDateField" promptText="Game Date (YYYY-MM-DD)" />
+        <TextField fx:id="gameTimeField" promptText="Game Time (HH:MM)" />
+        <TextField fx:id="homeTeamField" promptText="Home Team" />
+        <TextField fx:id="awayTeamField" promptText="Away Team" />
+        <HBox alignment="TOP_CENTER" spacing="10">
+            <Button onAction="#update" text="Update" />
+            <Button onAction="#cancel" text="Cancel" />
+        </HBox>
+    </children>
+</VBox>

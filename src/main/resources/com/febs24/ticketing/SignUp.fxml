@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.febs24.ticketing.controllers.SignUpController">
+    <children>
+        <Label layoutX="230.0" layoutY="90.0" text="Full Name" />
+        <Label layoutX="230.0" layoutY="140.0" text="Username" />
+        <Label layoutX="230.0" layoutY="190.0" text="Password" />
+        <Label layoutX="230.0" layoutY="240.0" text="Email" />
+        <TextField fx:id="fullNameField" layoutX="300.0" layoutY="85.0" />
+        <TextField fx:id="usernameField" layoutX="300.0" layoutY="135.0" />
+        <PasswordField fx:id="passwordField" layoutX="300.0" layoutY="185.0" />
+        <TextField fx:id="emailField" layoutX="300.0" layoutY="235.0" />
+        <Button layoutX="345.0" layoutY="288.0" onAction="#signUp" text="Sign Up" />
+        <Label fx:id="errorLabel" layoutX="230.0" layoutY="325.0" textFill="RED" />
+        <Label layoutX="324.0" text="FEBS" textFill="#910909">
+            <font>
+                <Font name="System Bold" size="44.0" />
+            </font>
+        </Label>
+      <Label layoutX="289.0" layoutY="48.0" text="Create account" textFill="#948b8b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

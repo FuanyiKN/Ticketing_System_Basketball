@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.febs24.ticketing.controllers.UpdateBookingController">
+    <children>
+        <Label text="Update Booking">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <TextField fx:id="bookingIdField" promptText="Booking ID" />
+        <TextField fx:id="ticketIdField" promptText="Ticket ID" />
+        <TextField fx:id="userIdField" promptText="User ID" />
+        <TextField fx:id="guestEmailField" promptText="Guest Email" />
+        <TextField fx:id="quantityField" promptText="Quantity" />
+        <TextField fx:id="totalPriceField" promptText="Total Price" />
+        <HBox alignment="TOP_CENTER" spacing="10">
+            <Button onAction="#update" text="Update" />
+            <Button onAction="#cancel" text="Cancel" />
+        </HBox>
+    </children>
+</VBox>
